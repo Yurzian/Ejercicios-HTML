@@ -1,0 +1,26 @@
+@mixin espacio ($alto : 200px) {
+    height: $alto;
+}
+
+@mixin centrado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin botonexamen ($color : $verde) {
+    flex: 1 1 30%;
+    background-color: $color;
+    @include centrado;
+    max-width: 400px;
+    height: 240px;
+    color:white;
+    margin: 20px;
+    font-weight:bold;
+    font-size: 30px;
+    text-align: center;
+    a {
+        text-decoration: none;
+        color:white;
+    }
+}

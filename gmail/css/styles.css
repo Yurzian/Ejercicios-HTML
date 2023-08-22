@@ -1,0 +1,74 @@
+@import url("https://fonts.cdnfonts.com/css/product-sans");
+body {
+  font-family: 'Product Sans', sans-serif; }
+
+main {
+  max-height: 100vh; }
+
+.menu {
+  display: flex;
+  justify-content: top;
+  float: left;
+  flex-flow: column wrap;
+  background-color: #AACAE2;
+  width: 70px;
+  text-align: center;
+  height: 100vh; }
+
+.botonMenu {
+  margin: 20px; }
+
+.atributoMenu {
+  margin: 12px; }
+  .atributoMenu p {
+    font-size: 12px;
+    text-align: center; }
+
+.contenido {
+  background-color: #B2D5EE;
+  height: 100vh; }
+
+.barraNav {
+  height: 70px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; }
+
+.buscador {
+  background-color: rgba(0, 0, 0, 0.1); }
+
+.centrado {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap; }
+
+.oscurecer:hover {
+  background-color: rgba(0, 0, 0, 0.1); }
+
+.oscurecer:active {
+  background-color: rgba(0, 0, 0, 0.3); }
+
+.menuMovil {
+  max-width: 250px; }
+
+#toggleDiv {
+  overflow: hidden;
+  width: 0px;
+  height: 0px;
+  transition: width 0.3s; }
+
+.iframe {
+  width: 90%;
+  height: 100%; }
+
+.btn {
+  border: none; }
+
+@media all and (max-width: 784px) {
+  .menu2 {
+    margin-top: 10px; } }
+* {
+  max-width: 100%; }
+
+/*# sourceMappingURL=styles.css.map */

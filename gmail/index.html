@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" 
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- FAVICON -->
+    <link rel="icon" type="image/png" href="imagenes/favicon.png"/>
+    <title>Gmail</title>
+</head>
+<body>
+    <main>
+        <aside class="menu">
+            <div class="botonMenu">
+                <button type="button" class="btn p-0 " id="toggleButton">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.516 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                      </svg>
+                </button>
+            </div>
+            <div class="atributoMenu">
+                <button type="button" class="btn p-0" id="boton1">
+                <i class="bi bi-envelope-fill oscurecer rounded-5 px-3 py-1"></i>
+                  <p>Mail</p>
+                </button>
+            </div>
+            <div class="atributoMenu">
+                <button type="button" class="btn p-0" id="boton2">
+                    <i class="bi bi-chat-left oscurecer rounded-5 px-3 py-1"></i>
+                  <p>Chat</p>
+                </button>
+            </div>
+            <div class="atributoMenu">
+                <button type="button" class="btn p-0" id="boton3">
+                    <i class="bi bi-people oscurecer rounded-5 px-3 py-1"></i>
+                  <p>Spaces</p>
+                </button>
+            </div>
+            <div class="atributoMenu">
+                <button type="button" class="btn p-0" id="boton4"> 
+                    <i class="bi bi-camera-video oscurecer rounded-5 px-3 py-1"></i>
+                  <p>Meet</p>
+                </button>
+            </div>
+        </aside>
+
+            <div class="contenido">
+                <div class="row barraNav">
+                    <div style="width:110px;">
+                        <img src="imagenes/logo.png" alt="Gmail" width="100%;" class="m-3">
+                    </div>
+                    <div class="col ps-5 d-flex justify-content-start align-items-center">
+                        <input type="email" class="form-control buscador px-3 py-2 ms-5 w-75" placeholder="&nbsp;&nbsp;Buscar en el correo" >
+                    </div>
+                    <div class="col d-flex justify-content-end align-items-center menu2 me-2" style="max-width: 500px;">
+                        <div class="dropdown">
+                            <button class="btn dropdown-toggle rounded-pill border border-dark-subtle dropdown-toggle text-secondary oscurecer" 
+                            type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                🟢 Activo
+                            </button>
+                          </div>&nbsp;&nbsp;
+
+                          <div class="dropdown ps-2">
+                            <button class="btn rounded-pill border-1 text-dark oscurecer" type="button" 
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="bi bi-info-circle fs-5  text-secondary"></i>
+                            </button>
+                          </div>&nbsp;&nbsp;
+
+                          <div class="dropdown">
+                            <button class="btn rounded-pill border-1 text-dark oscurecer" type="button" 
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="bi bi-gear fs-5  text-secondary"></i>
+                            </button>
+                          </div>&nbsp;&nbsp;
+
+                          <div class="dropdown">
+                            <button class="btn rounded-pill border-1 text-dark oscurecer" type="button" 
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="bi bi-grid-3x3-gap-fill fs-5  text-secondary"></i>
+                            </button>
+                          </div>&nbsp;&nbsp;
+
+                          <div class="dropdown">
+                            <button class="btn bg-light rounded border border-dark-subtle text-dark" type="button" 
+                                data-bs-toggle="dropdown" aria-expanded="false" style="min-width: 150px;">
+                                <img src="imagenes/junta.png" width="85px;" alt="Junta de Andalucía">
+                                <img src="imagenes/D.png" class="rounded-circle" alt="D">
+                            </button>
+                          </div>
+                    </div>
+                </div>
+
+                <div class="row" style="height: 92vh;">
+                    <div class="menuMovil" id="toggleDiv">
+                        <button type="button" class="btn shadow rounded-4 btn-light text-secondary fw-semibold py-3 px-4">
+                        <i class="bi bi-pencil"></i> &nbsp;&nbsp;Redactar</button>
+
+                        <div class="centrado mt-4">
+                            <div class="row w-100">
+                                <button type="button" class="btn border-0 rounded-5 text-dark  py-1 oscurecer" id="boton5">
+                                    <div class="row">
+                                        <div class="col-2">
+                                            <i class="bi bi-inbox-fill"></i>
+                                        </div>
+                                        <div class="col-9 d-flex align-items-start ">
+                                            Recibidos
+                                        </div>
+                                    </div>
+                                </button>
+                            </div>
+
+                            <div class="row w-100">
+                                <button type="button" class="btn border-0 rounded-5 text-dark  py-1 oscurecer" id="boton6">
+                                    <div class="row">
+                                        <div class="col-2">
+                                            <i class="bi bi-star"></i>
+                                        </div>
+                                        <div class="col-9 d-flex align-items-start ">
+                                            Destacados
+                                        </div>
+                                    </div>
+                                </button>
+                            </div>
+
+                            <div class="row w-100">
+                                <button type="button" class="btn border-0 rounded-5 text-dark  py-1 oscurecer" id="boton7">
+                                    <div class="row">
+                                        <div class="col-2">
+                                            <i class="bi bi-stopwatch"></i>
+                                        </div>
+                                        <div class="col-9 d-flex align-items-start ">
+                                            Pospuestos
+                                        </div>
+                                    </div>
+                                </button>
+                            </div>
+
+                            <div class="row w-100">
+                                <button type="button" class="btn border-0 rounded-5 text-dark  py-1 oscurecer" id="boton8">
+                                    <div class="row">
+                                        <div class="col-2">
+                                            <i class="bi bi-send"></i>
+                                        </div>
+                                        <div class="col-9 d-flex align-items-start ">
+                                            Enviados
+                                        </div>
+                                    </div>
+                                </button>
+                            </div>
+
+                            <div class="row w-100">
+                                <button type="button" class="btn border-0 rounded-5 text-dark  py-1 oscurecer" id="boton9">
+                                    <div class="row">
+                                        <div class="col-2">
+                                            <i class="bi bi-file-earmark"></i>
+                                        </div>
+                                        <div class="col-9 d-flex align-items-start ">
+                                            Borradores
+                                        </div>
+                                    </div>
+                                </button>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="col iframe1 d-flex justify-content-center align-items-center p-0 mx-3 mb-3">
+                        <iframe class="rounded-4 d-flex justify-content-center align-items-center" id="iframe1" height="100%" width="100%"
+                        src="recibidos.html">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+    </main>
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>

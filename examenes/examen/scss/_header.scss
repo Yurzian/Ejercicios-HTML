@@ -1,0 +1,24 @@
+header {
+    position:fixed;
+    width: 100%;
+
+    a{
+        text-decoration: none;
+    }
+}
+
+.linea1 {
+    @include centrado;
+    background-color: #666666;
+    height: 50px;
+    color:white;
+}
+
+.linea2 {
+    @include centrado;
+    background-color: white;
+}
+
+.centrado {
+    @include centrado;
+}
