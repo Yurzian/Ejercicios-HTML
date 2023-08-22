@@ -1,0 +1,94 @@
+.espacio1 {
+    @include espacio (50px);
+}
+
+//////////////////////////
+
+.logoMarcas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+///////////////////////////
+
+.articulo1 {
+    min-height: 750px;
+    background-image: url("../imagenes/img1.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.noborde {
+    border:0;
+}
+
+//////////////////////////
+
+.articulo2 {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.masBuscados {
+    background-color: #EAEAEA;
+}
+
+.sombra {
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 24px;
+}
+
+///////////////////////////////// 
+
+.articulo3 {
+    height: 750px;
+    background-image: url("../imagenes/img3.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+///////////////////////////////// 
+
+.articulo4 {
+    margin-top: 30px;
+}
+
+.precio1 {
+    font-size: 15px;
+}
+
+.precio2 {
+    font-size: 10px;
+}
+
+
+///////////////// 
+
+.zoom {
+    transition: transform 0.2s ease;
+}
+
+.zoom:hover {
+    transform: scale(1.1);
+  }
+
+////////////////////////////////
+
+.articulo5 {
+    min-height: 400px;
+    background-color: #F5F5F5;
+    a{
+        text-decoration: none;
+        color: black;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+
+    form {
+        a{
+            color:green;
+        }
+    }
+}

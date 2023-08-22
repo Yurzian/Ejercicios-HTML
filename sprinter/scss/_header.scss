@@ -1,0 +1,56 @@
+header {
+    text-align: center;
+    width: 100%;
+    background-color: white;
+    a{
+        color:white;
+        text-decoration: none;
+    }
+    a:hover{
+        text-decoration:underline;
+    }
+}
+
+.login {
+    @include centrado;
+    color: white;
+    background-color: $verdePrincipal;
+    font-size: 14px;
+    .negro{
+        background-color:black;
+    }
+}
+
+.rebajas {
+    @include centrado;
+    background-color: $verdeSecundario;
+}
+
+.logo {
+    .imgLogo img{
+        width: 300px;
+
+    }
+}
+
+.menu {
+    @include centrado;
+    padding: 0 30%;
+    background-color: rgb(185, 185, 185);
+    min-height: 50px;
+    text-align:start;
+}
+
+.menu1 {
+    text-align: start;
+}
+
+// PARA CAMBIAR EL CLICK POR EL HOVER
+.dropdown:hover>.dropdown-menu {
+    display: block;
+  }
+  
+  .dropdown>.dropdown-toggle:active {
+    /*Without this, clicking will make it sticky*/
+      pointer-events: none;
+  }

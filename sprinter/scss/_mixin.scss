@@ -1,0 +1,9 @@
+@mixin centrado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin espacio ($altura : 150px) {
+    height: $altura;
+}

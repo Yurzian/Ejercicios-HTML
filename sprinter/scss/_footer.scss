@@ -1,0 +1,19 @@
+footer {
+    a {
+        text-decoration: none;
+        color:grey;
+        margin-bottom: 20px;
+    }
+    a:hover {
+        text-decoration:underline;
+    }
+}
+
+.iconos:hover {
+    text-decoration: none;
+    color:black;
+}
+
+.centrado {
+    @include centrado;
+}
